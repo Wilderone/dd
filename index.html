@@ -466,245 +466,255 @@
                     <span>Тренировка</span>
                 </div>
             </div>
-            <div class="row acrob char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Акробатика (лов)</span>
+            <form action="secondaty-characts">
+                <div class="row acrob char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Акробатика (лов)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='acrobatics'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="acrob-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='acrobatics'>
+                <div class="row athl char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Атлетика (сил)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='athl'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="athl-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="acrob-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
+                <div class="row attent char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Внимательность (Мдр)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='attent'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="attent-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row athl char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Атлетика (сил)</span>
+                <div class="row theft char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Воровство (Лов)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='theft'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="theft-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='athl'>
+                <div class="row endurance char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Выносливость (Тел)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='endurance'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="endurance-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="athl-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
+                <div class="row intimidation char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Запугивание (Хар)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='intimidation'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="intimidation-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row attent char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Внимательность (Мдр)</span>
+                <div class="row streets char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Знание улиц (Хар)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='streets'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="streets-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='attent'>
+                <div class="row history char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>История (Инт)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='history'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="history-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="attent-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
+                <div class="row magic char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Магия (Инт) </span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='magic'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="magic-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row theft char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Воровство (Лов)</span>
+                <div class="row deception char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Обман (Хар)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='deception'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="deception-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='theft'>
+                <div class="row conversation char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Переговоры (Хар)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='conversation'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="conversation-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="theft-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
+                <div class="row dungeons char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Подземелья (Мдр)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='dungeons'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="dungeons-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row endurance char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Выносливость (Тел)</span>
+                <div class="row nature char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Природа (Мдр) </span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='nature'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="nature-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='endurance'>
+                <div class="row insight char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Проницательность(Мдр)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='insight'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="insight-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="endurance-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
+                <div class="row religion char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Религия (Инт)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='religion'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="religion-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row intimidation char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Запугивание (Хар)</span>
+                <div class="row stealth char-rows-grey">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Скрытность (Лов)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='stealth'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="stealth-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='intimidation'>
+                <div class="row healing-chars char-rows-white">
+                    <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
+                        <span>Целительство (Мдр)</span>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <input type="number" class="form-control" id='healing-chars'>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                        <select class="custom-select" id="healing-chars-train">
+                            <option selected value='0'>-</option>
+                            <option value="1">Да</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="intimidation-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
+                <div class="col secondary-chars-btn">
+                    <button type="submit" class='btn btn-primary' form='secondaty-characts'>Применить</button>
                 </div>
-            </div>
-            <div class="row streets char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Знание улиц (Хар)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='streets'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="streets-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row history char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>История (Инт)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='history'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="history-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row magic char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Магия (Инт) </span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='magic'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="magic-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row deception char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Обман (Хар)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='deception'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="deception-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row conversation char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Переговоры (Хар)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='conversation'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="conversation-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row dungeons char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Подземелья (Мдр)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='dungeons'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="dungeons-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row nature char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Природа (Мдр) </span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='nature'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="nature-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row insight char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Проницательность(Мдр)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='insight'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="insight-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row religion char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Религия (Инт)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='religion'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="religion-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row stealth char-rows-grey">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Скрытность (Лов)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='stealth'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="stealth-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row healing-chars char-rows-white">
-                <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7">
-                    <span>Целительство (Мдр)</span>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
-                    <input type="number" class="form-control" id='healing-chars'>
-                </div>
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
-                    <select class="custom-select" id="healing-chars-train">
-                        <option selected value='0'>-</option>
-                        <option value="1">Да</option>
-                    </select>
-                </div>
-            </div>
-            <!--  -->
+            </form>
+        </div>
+        <div class="col notes">
+            <form id='notes' action="#">
+                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                <button class='btn btn-secondary ' type="submit" form='notes'> Сохранить записи</button>
+            </form>
         </div>
 
 

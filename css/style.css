@@ -388,6 +388,20 @@ input {
   min-width: 70px;
 }
 
+.secondary-chars-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+#notes {
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   input {
     padding: 0;

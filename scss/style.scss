@@ -247,6 +247,14 @@ body {
 input {
     min-width: 70px;
 }
+.secondary-chars-btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+#notes {
+    width: 100%;
+}
 
 @media screen and (max-width: 800px) {
     // .input-group-text {
