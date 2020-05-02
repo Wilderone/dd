@@ -1,0 +1,115 @@
+body {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.person {
+    display: flex;
+    justify-content: end;
+}
+.container {
+    //display: flex;
+    flex-wrap: wrap;
+}
+.racelevelcol {
+    display: flex;
+    justify-content: center;
+    .level {
+        max-width: 90px;
+        margin-left: 5px;
+    }
+}
+.racelevelsub {
+    margin-left: 15px;
+    min-width: 50px;
+    padding: 0;
+    text-align: center;
+    max-height: 30px;
+}
+
+.name {
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col {
+        max-width: 300px;
+    }
+}
+
+.size {
+    justify-content: center;
+    .col {
+        max-width: 300px;
+    }
+}
+.vision {
+    justify-content: center;
+    .col {
+        max-width: 450px;
+    }
+}
+.hitsrow {
+    justify-content: center;
+    border: 1px solid black;
+    background-color: grey;
+    color: #ffffff;
+    font-size: large;
+    font-weight: 700;
+}
+
+.movesrow {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: grey;
+    color: #ffffff;
+    font-size: large;
+    font-weight: 700;
+}
+
+.moves {
+    margin: 10px 0 10px 0;
+}
+.attackrow {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: grey;
+    color: #ffffff;
+    font-size: large;
+    font-weight: 700;
+}
+.meleeinput {
+    text-align: center;
+    span {
+        margin: 0 5px 0 5px;
+        text-align: center;
+    }
+}
+.attack {
+    input {
+        max-width: 50px;
+    }
+    .row {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.rangeinput {
+    text-align: center;
+    span {
+        margin: 0 5px 0 5px;
+        text-align: center;
+    }
+}
+.attackbtn {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,164 @@
+body {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.racelevelcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.racelevelcol .level {
+  max-width: 90px;
+  margin-left: 5px;
+}
+
+.racelevelsub {
+  margin-left: 15px;
+  min-width: 50px;
+  padding: 0;
+  text-align: center;
+  max-height: 30px;
+}
+
+.name {
+  margin: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.name label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name .col {
+  max-width: 300px;
+}
+
+.size {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.size .col {
+  max-width: 300px;
+}
+
+.vision {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vision .col {
+  max-width: 450px;
+}
+
+.hitsrow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  background-color: grey;
+  color: #ffffff;
+  font-size: large;
+  font-weight: 700;
+}
+
+.movesrow {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  background-color: grey;
+  color: #ffffff;
+  font-size: large;
+  font-weight: 700;
+}
+
+.moves {
+  margin: 10px 0 10px 0;
+}
+
+.attackrow {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  background-color: grey;
+  color: #ffffff;
+  font-size: large;
+  font-weight: 700;
+}
+
+.meleeinput {
+  text-align: center;
+}
+
+.meleeinput span {
+  margin: 0 5px 0 5px;
+  text-align: center;
+}
+
+.attack input {
+  max-width: 50px;
+}
+
+.attack .row {
+  margin: 10px 0 10px 0;
+}
+
+.rangeinput {
+  text-align: center;
+}
+
+.rangeinput span {
+  margin: 0 5px 0 5px;
+  text-align: center;
+}
+
+.attackbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

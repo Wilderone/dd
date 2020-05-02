@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>D&D</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class='wrapper container'>
+        <div class="head container">
+            <div class="row person">
+                <div class="col-3 choosehero">
+                    <form id='personage' action="#">
+                        <div class="input-group mb-3 genderinp">
+                            <div class="input-group-prepend">
+                                <select id="heroes" class="custom-select">
+                                    <option selected>Выбери персонажа</option>
+
+                                </select>
+                                <button class='btn btn-primary' type="submit" form="personage">ОК</button>
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <form id='head' onsubmit="console.log(race.value)" action="#">
+                <div class="row">
+                    <div class="col racelevelcol">
+
+
+                        <div class="input-group-prepend">
+                            <input id='race' type="text" class='race form-control' placeholder="Расса, класс">
+                            <input id='lvl' type="text" class='level form-control' placeholder="Уровень">
+                            <button class='btn btn-primary racelevelsub' type="submit" form='head'>ОК</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row name">
+                    <div class="col namecol input-group-prepend">
+
+                        <input id='nameinp' class='form-control nameinp' type="text" placeholder="Имя">
+                    </div>
+                    <div class="col gendercol">
+                        <div class="input-group mb-3 genderinp">
+                            <div class="input-group-prepend">
+
+                            </div>
+                            <select id="genderinp" class="custom-select">
+                                <option selected>Пол</option>
+                                <option value="1">Мужской</option>
+                                <option value="2">Женский</option>
+                                <option value="3">Другое</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col expcol">
+                        <div class="input-group-prepend">
+
+                            <input id='expinp' class='form-control expinp' type="text" placeholder="Опыт">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">exp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row size">
+                    <div class="col height">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Рост</span>
+                            </div>
+                            <input id='height' type="text" class="form-control" placeholder="Рост">
+                        </div>
+                    </div>
+                    <div class="col weight">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Вес</span>
+                            </div>
+                            <input id='weight' type="text" class="form-control" placeholder="Вес">
+                        </div>
+                    </div>
+                    <div class="col sizecol">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Размер</span>
+                            </div>
+                            <input id='sizeinp' type="text" class="form-control" placeholder="Размер">
+                        </div>
+                    </div>
+                </div>
+                <div class="row vision">
+                    <div class="col sight">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Зрение</span>
+                            </div>
+                            <input id='visioninp' type="text" class="form-control" placeholder="Зрение">
+                        </div>
+                    </div>
+                    <div class="col lang">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Языки</span>
+                            </div>
+                            <input id='langinp' type="text" class="form-control" placeholder="Языки">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container hits">
+            <form id='hitsform' action="">
+                <div class="row hitsrow">
+                    <span>Хиты</span>
+                </div>
+                <div class="row">
+                    <div class="col-6 HP">
+                        <table class="table HPtable">
+                            <tbody>
+                                <tr>
+                                    <th scopre='row'></th>
+                                    <td>HP: </td>
+                                    <td><input class='form-control' id='hpbase' type="text"></td>
+                                    <td><input class='form-control' id='hpleft' type="text"></td>
+
+                                </tr>
+                                <tr>
+                                    <th scopre='row'></th>
+                                    <td>Исцеление: </td>
+                                    <td><input class='form-control' id='healing' type="text"></td>
+                                    <td><input class='form-control' id='healingleft' type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-6 injured">
+                        <table class="table HPtable">
+                            <tbody>
+                                <tr>
+                                    <th scopre='row'></th>
+                                    <td>Ранен: </td>
+                                    <td><input class='form-control' id='wound' type="text"></td>
+                                    <td><input class='form-control' id='woundsumm' type="text"></td>
+
+                                </tr>
+                                <tr>
+                                    <th scopre='row'></th>
+                                    <td>Исцелений в день: </td>
+                                    <td><input class='form-control' id='healperday' type="text"></td>
+                                    <td><input class='form-control' id='healperdayleft' type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center hitssubmit">
+                    <button class='btn btn-primary' type="submit" form='hitsform'>Calc hits</button>
+                </div>
+            </form>
+        </div>
+        <div class="container moves">
+            <div class="row movesrow">
+                <span> Движение</span>
+            </div>
+            <form id='movesform' action="#">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Инициатива</span>
+                            </div>
+                            <input id='initiative' type="text" aria-label="Инициатива" class="form-control">
+                            <input type="initiativemodif" aria-label="Инициатива" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Скорость</span>
+                            </div>
+                            <input id='speed' type="text" aria-label="Скорость" class="form-control">
+                            <input type="speedmodif" aria-label="Скорость" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ед. действия</span>
+                            </div>
+                            <input id='actions' type="text" aria-label="Ед. действия" class="form-control">
+                            <input type="actionsmodif" aria-label="Ед. действия" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class='btn btn-primary' type="submit" form='movesform'>Calc moves</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container attack">
+            <div class="row attackrow">
+                <span> Атака</span>
+            </div>
+            <form id='attackform' action="#">
+                <div class="row melee">
+                    <div class="col-2">
+                        <span>Рукопашная атака:</span>
+                    </div>
+                    <div class="col">
+                        <div class="input-group meleeinput">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">d</span>
+                            </div>
+                            <input id='dice-melee-attack' type="text" aria-label="d" class="form-control">
+                            <span>+</span>
+                            <input id='melee-attack-modif' type="text" aria-label="" class="form-control">
+
+                            <select class="custom-select" id="meleeattacktype">
+                                <option selected>Choose...</option>
+                                <option value="power">Силы</option>
+                                <option value="agility">Ловкости</option>
+                                <option value="intellect">Интеллекта</option>
+                            </select>
+                            <span>Против</span>
+                            <select class="custom-select" id="enemy-melee-deftype">
+                                <option selected>Choose...</option>
+                                <option value="kd">КД</option>
+                                <option value="agilitydef">Ловкости</option>
+                                <option value="intellectdef">Интеллекта</option>
+                            </select>
+                            <span>Урон:</span>
+                            <input id='melee-attack-damage-dices' type="text" aria-label="" class="form-control">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">d</span>
+                            </div>
+                            <input id='dice-melee-attack-sides' type="text" aria-label="d" class="form-control">
+                            <span>+</span>
+                            <input id='dice-melee-attack-damage-modif' type="text" aria-label="d" class="form-control">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row range">
+
+                    <div class="col-2">
+                        <span>Дальнобойная атака:</span>
+                    </div>
+                    <div class="col">
+                        <div class="input-group rangeinput">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">d</span>
+                            </div>
+                            <input id='dice-range-attack' type="text" aria-label="d" class="form-control">
+                            <span>+</span>
+                            <input id='range-attack-modif' type="text" aria-label="" class="form-control">
+
+                            <select class="custom-select" id="rangeattacktype">
+                                <option selected>Choose...</option>
+                                <option value="power">Силы</option>
+                                <option value="agility">Ловкости</option>
+                                <option value="intellect">Интеллекта</option>
+                            </select>
+                            <span>Против</span>
+                            <select class="custom-select" id="enemy-range-deftype">
+                                <option selected>Choose...</option>
+                                <option value="kd">КД</option>
+                                <option value="agilitydef">Ловкости</option>
+                                <option value="intellectdef">Интеллекта</option>
+                            </select>
+                            <span>Урон:</span>
+                            <input id='range-attack-damage-dices' type="text" aria-label="" class="form-control">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">d</span>
+                            </div>
+                            <input id='dice-range-attack-sides' type="text" aria-label="d" class="form-control">
+                            <span>+</span>
+                            <input id='dice-range-attack-damage-modif' type="text" aria-label="d" class="form-control">
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <div class="col attackbtn">
+                <button class='btn btn-primary' type="submit" form='attack'>Calc attack</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
