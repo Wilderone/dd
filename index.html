@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="row size">
-            <div class="col height">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 height">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Рост</span>
@@ -81,7 +81,7 @@
                     <input id='height' type="text" class="form-control" placeholder="Рост">
                 </div>
             </div>
-            <div class="col weight">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 weight">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Вес</span>
@@ -89,7 +89,7 @@
                     <input id='weight' type="text" class="form-control" placeholder="Вес">
                 </div>
             </div>
-            <div class="col sizecol">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 sizecol">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Размер</span>
@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="row vision">
-            <div class="col sight">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 sight">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Зрение</span>
@@ -107,7 +107,7 @@
                     <input id='visioninp' type="text" class="form-control" placeholder="Зрение">
                 </div>
             </div>
-            <div class="col lang">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 lang">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Языки</span>
@@ -221,7 +221,7 @@
             </div>
             <form id='attackform' action="#">
                 <div class="row melee">
-                    <div class="col col-md-6 col-sm-12 melee-self">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 melee-self">
                         <span>Рукопашная атака:</span>
                         <div class="input-group meleeinput">
                             <div class="input-group-prepend">
@@ -237,11 +237,16 @@
                                 <option value="agility">Ловкости</option>
                                 <option value="intellect">Интеллекта</option>
                             </select>
+
                         </div>
+
                     </div>
-                    <div class="col col-md-6 col-sm-12 melee-against">
-                        <span>Против</span>
-                        <div>
+
+
+                    <div class="col-12 col-md-12 col-sm-4 col-lg-3 col-xl-3  melee-against">
+
+                        <div class='melee-against-options'>
+                            <span>Против</span>
                             <select class="custom-select" id="enemy-melee-deftype">
                                 <option selected>Choose...</option>
                                 <option value="kd">КД</option>
@@ -249,11 +254,14 @@
                                 <option value="intellectdef">Интеллекта</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-sm-8 col-lg-5 col-xl-5 melee-against">
                         <span>Урон:</span>
                         <input id='melee-attack-damage-dices' type="number" aria-label="" class="form-control">
                         <div class="input-group-prepend">
                             <span class="input-group-text">d</span>
                         </div>
+
                         <input id='dice-melee-attack-sides' type="number" aria-label="d" class="form-control">
                         <span>+</span>
                         <input id='dice-melee-attack-damage-modif' type="number" aria-label="d" class="form-control">
@@ -264,7 +272,7 @@
                 </div>
                 <div class="row range">
 
-                    <div class="col col-md-6 col-sm-12 range-self">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 range-self">
                         <span>Дальнобойная атака:</span>
 
 
@@ -284,14 +292,18 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col col-md-6 col-sm-12 range-against">
-                        <span>Против</span>
-                        <select class="custom-select" id="enemy-range-deftype">
-                            <option selected>Choose...</option>
-                            <option value="kd">КД</option>
-                            <option value="agilitydef">Ловкости</option>
-                            <option value="intellectdef">Интеллекта</option>
-                        </select>
+                    <div class="col-12 col-md-12 col-sm-4 col-lg-3 col-xl-3 range-against">
+                        <div class="range-against-options">
+                            <span>Против</span>
+                            <select class="custom-select" id="enemy-range-deftype">
+                                <option selected>Choose...</option>
+                                <option value="kd">КД</option>
+                                <option value="agilitydef">Ловкости</option>
+                                <option value="intellectdef">Интеллекта</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-sm-8 col-lg-5 col-xl-5 melee-against">
                         <span>Урон:</span>
                         <input id='range-attack-damage-dices' type="number" aria-label="" class="form-control">
                         <div class="input-group-prepend">
@@ -302,6 +314,7 @@
                         <input id='dice-range-attack-damage-modif' type="number" aria-label="d" class="form-control">
                     </div>
                 </div>
+
                 <div class="col attackbtn">
                     <button class='btn btn-primary' type="submit" form='attack'>Calc attack</button>
                 </div>

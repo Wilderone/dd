@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.input-group .form-control {
+  min-width: 65px;
+}
+
 body {
   padding: 30px;
   display: -webkit-box;
@@ -28,6 +32,10 @@ body {
 .container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+input {
+  min-width: 65px;
 }
 
 .racelevelcol {
@@ -286,6 +294,22 @@ body {
   margin: 7px 0 7px 0;
 }
 
+.melee-against-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .meleeinput {
   text-align: center;
 }
@@ -293,10 +317,6 @@ body {
 .meleeinput span {
   margin: 0 5px 0 5px;
   text-align: center;
-}
-
-.attack input {
-  max-width: 50px;
 }
 
 .attack .row {
@@ -357,6 +377,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-left: 35px;
+  margin: 10px 0 10px 0;
 }
 
 .range-against span {
@@ -384,10 +405,6 @@ body {
   min-width: 70px;
 }
 
-input {
-  min-width: 70px;
-}
-
 .secondary-chars-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,12 +417,6 @@ input {
 
 #notes {
   width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  input {
-    padding: 0;
-  }
 }
 
 @media screen and (max-width: 580px) {

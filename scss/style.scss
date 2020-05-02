@@ -1,3 +1,8 @@
+.input-group {
+    .form-control {
+        min-width: 65px;
+    }
+}
 body {
     padding: 30px;
     display: flex;
@@ -14,6 +19,9 @@ body {
 .container {
     //display: flex;
     flex-wrap: wrap;
+}
+input {
+    min-width: 65px;
 }
 
 .racelevelcol {
@@ -179,6 +187,12 @@ body {
 .melee-against {
     margin: 7px 0 7px 0;
 }
+.melee-against-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .meleeinput {
     text-align: center;
     span {
@@ -187,9 +201,6 @@ body {
     }
 }
 .attack {
-    input {
-        max-width: 50px;
-    }
     .row {
         margin: 10px 0 10px 0;
     }
@@ -225,6 +236,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     padding-left: 35px;
+    margin: 10px 0 10px 0;
     span {
         margin: 0 5px 0 5px;
         text-align: center;
@@ -244,9 +256,7 @@ body {
 .custom-select {
     min-width: 70px;
 }
-input {
-    min-width: 70px;
-}
+
 .secondary-chars-btn {
     display: flex;
     justify-content: center;
@@ -256,15 +266,15 @@ input {
     width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-    // .input-group-text {
-    //     display: none;
-    //     padding: 0;
-    // }
-    input {
-        padding: 0;
-    }
-}
+// @media screen and (max-width: 800px) {
+//     .input-group-text {
+//         display: none;
+//         padding: 0;
+//     }
+//     input {
+//         padding: 0;
+//     }
+// }
 
 @media screen and (max-width: 580px) {
     .char-rows-grey,
