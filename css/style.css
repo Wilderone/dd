@@ -25,6 +25,10 @@
   min-width: 65px;
 }
 
+.char-table-title {
+  word-wrap: break-word;
+}
+
 body {
   padding: 30px;
   display: -webkit-box;
@@ -172,6 +176,18 @@ input {
 
 .moves {
   margin: 10px 0 10px 0;
+}
+
+.char-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .char-rows-grey {
@@ -436,5 +452,11 @@ input {
   }
   .sec-chars-title {
     word-wrap: break-word;
+  }
+  .char-table-title {
+    font-size: 12px;
+  }
+  .char-rows {
+    font-size: 10px;
   }
 }

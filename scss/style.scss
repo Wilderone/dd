@@ -23,6 +23,9 @@
         min-width: 65px;
     }
 }
+.char-table-title {
+    word-wrap: break-word;
+}
 body {
     padding: 30px;
     display: flex;
@@ -117,7 +120,11 @@ input {
 .moves {
     margin: 10px 0 10px 0;
 }
-
+.char-rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .char-rows-grey {
     display: flex;
     flex-wrap: nowrap;
@@ -292,5 +299,11 @@ input {
     }
     .sec-chars-title {
         word-wrap: break-word;
+    }
+    .char-table-title {
+        font-size: 12px;
+    }
+    .char-rows {
+        font-size: 10px;
     }
 }
