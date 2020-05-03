@@ -35,7 +35,7 @@
                 <div class="row names">
                     <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 racelevelcol">
 
-                        <input id='race' type="text" class='race form-control' placeholder="Расса, класс">
+                        <input id='race' type="text" class='race form-control' placeholder="Раса, класс">
                     </div>
                     <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                         <input id='lvl' type="text" class='level form-control' placeholder="Уровень">
@@ -120,7 +120,7 @@
         </div>
         <div class="container hits">
             <form id='hitsform' action="">
-                <div class="row hitsrow">
+                <div class="row hitsrow sect-head">
                     <span>Хиты</span>
                 </div>
                 <div class="row heal-row">
@@ -174,7 +174,7 @@
         </form>
         </div>
         <div class="container moves">
-            <div class="row movesrow">
+            <div class="row movesrow sect-head">
                 <span> Движение</span>
             </div>
             <form id='movesform' action="#">
@@ -216,7 +216,7 @@
             </form>
         </div>
         <div class="container attack">
-            <div class="row attackrow">
+            <div class="row attackrow sect-head">
                 <span> Атака</span>
             </div>
             <form id='attackform' action="#">
@@ -376,7 +376,7 @@
         <div class="container characteristics">
             <form id='main-characts' action="">
                 <div class="row">
-                    <div class="col char-title">
+                    <div class="col char-title sect-head">
                         <span>Характеристики</span>
                     </div>
                 </div>
@@ -467,7 +467,7 @@
                 </div>
             </form>
         </div>
-        <div class="container secondary-chars">
+        <div class="container secondary-chars ">
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7 sec-chars-title">
                     <span>Вторичная характеристика</span>
@@ -729,6 +729,20 @@
                 <button class='btn btn-secondary ' type="submit" form='notes'> Сохранить записи</button>
             </form>
         </div>
+        <div class="container race-abilities">
+            <div class="race-abilities__title sect-head">
+                <span>Расовые умения и черты</span>
+            </div>
+            <div class="race-abilities__content">
+                <div class="content__abil-manage">
+                    <button class='add-abil' data-toggle="tooltip" data-placement="top" title="Добавить">
+                    </button>
+                    <button class='delete-abil' data-toggle="tooltip" data-placement="bottom" title="Удалить">
+                    </button>
+                </div>
+            </div>
+
+        </div>
 
 
         </div>
@@ -737,12 +751,33 @@
         </div>
 
 
+        </div>
+        </div>
+        <div class="abilities-modal hidden">
+            <button type="button" class="close abil-close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="abilities-modal__filter">
+                <form id='race-abilities' action="#">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Раса</label>
+                        <select class="form-control" id="race_selector">
+                            <option selected value=""></option>
+                            <option value='hum'>Человек</option>
+                            <option value='halfling'>Халфлинг</option>
+                            <option value='elf'>Эльф</option>
+                            <option value='semielf'>Полуэльф</option>
+                            <option value='drago'>Дракон</option>
+                        </select>
+                </form>
+            </div>
         </div>
         </div>
     </main>
-
-
-
+    <footer>
+        Icons made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo
+            Hernandez</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -753,6 +788,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
+<!-- TODO: остановился на выборе рассовых талантов. Сделать фильтр талантов по рассам в модальном окне -->

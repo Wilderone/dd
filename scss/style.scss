@@ -1,3 +1,23 @@
+.abilities-modal {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+.abil-close {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 96%;
+    cursor: pointer;
+    font-size: 35px;
+    color: rgb(36, 175, 240);
+    font-weight: 300;
+}
 .input-group {
     .form-control {
         min-width: 65px;
@@ -73,14 +93,6 @@ input {
         max-width: 450px;
     }
 }
-.hitsrow {
-    justify-content: center;
-    border: 1px solid black;
-    background-color: grey;
-    color: #ffffff;
-    font-size: large;
-    font-weight: 700;
-}
 
 .heal-row,
 .healing {
@@ -102,33 +114,8 @@ input {
     }
 }
 
-.movesrow {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: grey;
-    color: #ffffff;
-    font-size: large;
-    font-weight: 700;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .moves {
     margin: 10px 0 10px 0;
-}
-.attackrow {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: grey;
-    color: #ffffff;
-    font-size: large;
-    font-weight: 700;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .char-rows-grey {
@@ -157,18 +144,7 @@ input {
     justify-content: flex-start;
     border: 1px solid black;
 }
-.char-title {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    justify-content: center;
-    border: 1px solid black;
-    background-color: grey;
-    color: #ffffff;
-    font-size: large;
-    font-weight: 700;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .сhar-row {
     justify-content: center;
     text-align: center;
@@ -265,15 +241,47 @@ input {
 #notes {
     width: 100%;
 }
+.hidden {
+    display: none;
+}
+.sect-head {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: grey;
+    color: #ffffff;
+    font-size: large;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-// @media screen and (max-width: 800px) {
-//     .input-group-text {
-//         display: none;
-//         padding: 0;
-//     }
-//     input {
-//         padding: 0;
-//     }
+.input-group > .custom-select {
+    min-width: 50px;
+}
+
+.content__abil-manage {
+    display: flex;
+    flex-direction: column;
+}
+.add-abil {
+    background: url("/img/add.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+.delete-abil {
+    background: url("/img/del.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+// .tooltip {
+//     position: relative;
+// }
+// .tooltip-text {
+//     visibility: hidden;
 // }
 
 @media screen and (max-width: 580px) {
